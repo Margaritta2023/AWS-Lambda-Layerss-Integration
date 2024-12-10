@@ -16,5 +16,5 @@
     "auth_type": "NONE"
   },
   "ephemeral_storage": 512,
-  "layers": ["weather"]
+  "layers": ["open-meteo"]
 }

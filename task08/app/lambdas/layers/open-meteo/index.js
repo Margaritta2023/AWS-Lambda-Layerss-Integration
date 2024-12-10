@@ -1,6 +1,6 @@
 const axios = require("axios");
 
-exports.myMeteoApi = class {
+exports.OpenMetoAPI = class {
   getMeteo() {
     return axios
       .get(

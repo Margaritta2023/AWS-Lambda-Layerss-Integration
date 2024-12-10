@@ -1,10 +1,10 @@
-const { myMeteoApi } = require("/opt/nodejs");
+const { OpenMetoAPI } = require("/opt/nodejs");
 
 exports.handler = async (event) => {
     
-    const meteo = new myMeteoApi;
+    const meteo = new OpenMetoAPI;
     const responseApi = await meteo.getMeteo()
-  
+    console.log(JSON.stringify(responseApi))
     const response = {
         statusCode: 200,
         body: responseApi,
