@@ -11,6 +11,7 @@
   "dependencies": [],
   "event_sources": [],
   "env_variables": {},
+  "alias": "learn",
   "publish_version": false,
   "url_config": {
     "auth_type": "NONE"
