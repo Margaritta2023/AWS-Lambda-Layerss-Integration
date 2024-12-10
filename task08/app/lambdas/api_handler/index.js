@@ -4,10 +4,10 @@ exports.handler = async (event) => {
     
     const meteo = new OpenMetoAPI;
     const responseApi = await meteo.getMeteo()
-    console.log(JSON.stringify(responseApi))
+    const totalResult = JSON.stringify(responseApi)
     const response = {
         statusCode: 200,
-        body: responseApi,
+        body: totalResult,
     };
     return response;
 };
